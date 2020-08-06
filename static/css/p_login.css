@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Lobster&family=Patua+One&family=Rubik:wght@500&family=Sniglet&display=swap');
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css');
+* {
+    box-sizing: border-box;
+}
+
+header,
+section {
+    overflow-x: hidden;
+}
+
+header,
+section {
+    overflow-x: hidden;
+}
+
+header {
+    padding-bottom: 5px;
+    box-shadow: 0px 5px 10px #05a0ed;
+}
+
+header a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9em;
+    color: whitesmoke;
+}
+
+header nav a {
+    font-size: 20px;
+    color: black;
+    justify-content: space-evenly;
+}
+
+header nav a:hover {
+    color: blue;
+}
+
+header nav .navbar-brand {
+    color: #1586e8;
+    padding-right: 50px !important;
+}
+
+header nav .navbar-brand:hover {
+    color: blue;
+}
+
+header .nav-item {
+    padding: 0.5em;
+    align-content: center;
+}
+
+header .navbar-brand {
+    padding-left: 8rem;
+    padding-right: 12rem;
+}
+
+header .navbar-brand img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    padding-right: 2px;
+    background: url("static/images/k.jpg")
+}
+
+header .nav-link {
+    color: black;
+}
+
+header .nav-link :hover {
+    color: blue;
+}
+
+form {
+    font-size: medium;
+}

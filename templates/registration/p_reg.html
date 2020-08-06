@@ -1,0 +1,71 @@
+{% load static %}
+{% load crispy_forms_tags %}
+
+<html>
+    
+   <head>
+       <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+       <link rel="stylesheet" href="{% static 'css/p_reg.css' %}">
+   </head>
+
+    <header>
+        <div class="container-fluid p-0">
+            <nav class="navbar navbar-expand-lg">
+                <a class="navbar-brand" href="{% url 'about' %}">
+                    <img src="{% static 'images\k.jpg' %}" alt="">PreKoa</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-align-right text-light"></i>
+          </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Predict</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'about' %}">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'howTo' %}">How to</a>
+                        </li>
+                        
+                    </ul>
+                    <div class="mr-auto"></div>
+                    <div>
+                        <a class="btn btn-outline-primary btn-small pl-4" href="{% url 'docLogout' %}">Log Out</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="content-section text-center section-1">
+            <div class="container">
+                <form method="POST">
+                    {% csrf_token %}
+                    <fieldset class="form-group">
+                        <legend class="mb-2">Patient Registration</legend>
+                        {{ form|crispy }}
+                    </fieldset>
+                    <div class="form-group">
+                        <button class="btn btn-outline-primary" type="submit">Register Patient</button>
+                    </div>
+                </form>
+                <div class="border-top pt-3">
+                    <small class="text-muted">
+                        <a class="mr-2 text-black" href="{% url 'patLogin' %}">Log In Patient if already registered</a>.  
+                    </small>
+                </div>
+            </div>
+        </section>
+    </main>
+    {% include "_base.html" %}
+
+    <script>
+        $( function() {
+            $( "#datepicker" ).datepicker();
+        });
+    </script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</html>

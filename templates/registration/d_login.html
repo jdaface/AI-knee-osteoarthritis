@@ -1,0 +1,34 @@
+{% load crispy_forms_tags %}
+{% load static %}
+<html>
+    <head>
+        <link rel="stylesheet" href="{% static 'css/d_login.css' %}">
+    </head>
+<body>
+    
+
+
+    <main>
+       <section class="content-section text-center section-1">
+            <div class="container loginbox">
+                <h1>Login as Physician</h1>
+                <form method="POST">
+                    {% csrf_token %}
+                    <fieldset class="form-group">
+                        {{ form|crispy }}
+                    </fieldset>
+                    <div class="form-group">
+                        <button class="btn btn-outline-primary" type="submit" >Submit</button>
+                    </div>
+                </form>
+                <div class="border-top pt-3">
+                    <small class="text-muted">
+                        <a class="mr-2 text-blue popout" href="{% url 'docReg' %}">Register as a Physician </a> 
+                    </small>
+                </div>
+            </div>
+       </section>
+    </main>
+
+    {% include "_base.html" %}
+</html>

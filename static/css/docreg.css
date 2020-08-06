@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Acme&family=Lobster&family=Patua+One&family=Rubik:wght@500&family=Sniglet&display=swap");
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css");
+* {
+    box-sizing: border-box;
+}
+
+header,
+section {
+    overflow-x: hidden;
+}
+
+body {
+    background: white;
+    font: var(--Sniglet-font);
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --Sniglet-font: "Sniglet", cursive;
+    --Rubik: "Rubnik", cursive;
+    --Patua: "Patua One", cursive;
+    --light-black: #2e2c2caf;
+    --bggradient: linear-gradient(to bottom, #dd2476, #ff512f);
+    --light-gray: rgba(255, 255, 255, 0.5);
+}
+
+header,
+section {
+    overflow-x: hidden;
+}
+
+header {
+    padding-bottom: 5px;
+    box-shadow: 0px 5px 10px #05a0ed;
+}
+
+header a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9em;
+    color: whitesmoke;
+}
+
+header nav a {
+    font-size: 20px;
+    color: black;
+    justify-content: space-evenly;
+}
+
+header nav a:hover {
+    color: blue;
+}
+
+header nav .navbar-brand {
+    color: #1586e8;
+    padding-right: 50px !important;
+}
+
+header nav .navbar-brand:hover {
+    color: blue;
+}
+
+header .nav-item {
+    padding: 0.5em;
+    align-content: center;
+}
+
+header .navbar-brand {
+    padding-left: 8rem;
+    padding-right: 12rem;
+}
+
+header .navbar-brand img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    padding-right: 2px;
+    background: url("static/images/k.jpg")
+}
+
+header .nav-link {
+    color: black;
+}
+
+header .nav-link :hover {
+    color: blue;
+}
+
+section {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    width: 700px;
+    background-color: white;
+    color: black;
+    top: 5%;
+    left: 50%;
+    position: relative;
+    transform: translate(-50%, 5%);
+    box-sizing: border-box;
+    box-shadow: 2px 5px 20px #05a0ed;
+    text-align: center;
+    border-radius: 20px;
+}
+
+section legend {
+    font-size: 25px;
+    padding-bottom: 10px;
+    color: #05a0ed;
+}
+
+section button[type="submit"] {
+    width: 90%;
+    border-radius: 25px;
+    font-size: 25px;
+}
+
+section small {
+    color: black;
+    font-size: 15px;
+}
+
+section small:hover {
+    color: blue;
+    font-size: 25px
+}
+
+form {
+    font-size: 20px !important;
+}

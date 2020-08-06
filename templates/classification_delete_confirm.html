@@ -1,0 +1,29 @@
+{% load static %}
+{% load crispy_forms_tags %}
+
+<html>
+   <head></head>
+
+   <header></header>
+
+   <main>
+        <section>
+            <div class="card">
+                <form method="POST">
+
+                    <div class="card-body">
+                        <h4>Delete image #{{object.id}}</h4>
+
+                        {% csrf_token %}
+
+
+                        <button class="btn btn-danger" type="submit">Delete</button>
+                        <a class="btn btn-secondary" href="{% url 'list' %}">Back</a>
+                    </div>
+
+                </form>
+
+            <div>
+        </section>
+   </main>
+</html>

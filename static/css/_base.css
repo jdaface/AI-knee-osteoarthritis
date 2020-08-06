@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Lobster&family=Patua+One&family=Rubik:wght@500&family=Sniglet&display=swap');
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css');
+* {
+    box-sizing: border-box;
+}
+
+header,
+section {
+    overflow-x: hidden;
+}

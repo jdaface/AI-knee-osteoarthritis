@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Lobster&family=Patua+One&family=Rubik:wght@500&family=Sniglet&display=swap');
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css');
+* {
+    box-sizing: border-box;
+}
+
+header,
+section {
+    overflow-x: hidden;
+}
+
+:root {
+    --Sniglet-font: "Sniglet", cursive;
+    --Rubik: "Rubnik", cursive;
+    --Patua: "Patua One", cursive;
+    --light-black: #2e2c2caf;
+    --bggradient: linear-gradient(to bottom, #dd2476, #ff512f);
+    --light-gray: rgba(255, 255, 255, 0.5);
+}
+
+body {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    margin-top: 3.8rem;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    width: 500px;
+    background-color: white;
+    color: black;
+    top: 5%;
+    left: 50%;
+    position: relative;
+    transform: translate(-50%, 5%);
+    box-sizing: border-box;
+    box-shadow: 2px 5px 20px #05a0ed;
+    text-align: center;
+    border-radius: 20px;
+}
+
+h1 {
+    margin: 0;
+    text-align: center;
+    padding: 0, 0, 10px;
+    font-size: 30px;
+    padding-bottom: 20px;
+    color: #05a0ed;
+}
+
+.loginbox form {
+    text-align: center;
+    font: bold;
+}
+
+.loginbox form[type="text"] form[type="password"] {
+    border: none;
+    border-bottom: 1px solid #246eed;
+    background: transparent;
+    outline: none;
+    color: black;
+    font-size: 16px;
+}
+
+.loginbox button[type="submit"] {
+    height: 40px;
+    font-size: 20px;
+    border-radius: 20px;
+    width: 400px;
+    font-weight: bold;
+}
+
+.loginbox button[type="submit"] :hover {
+    cursor: pointer;
+    background: #0c07ab;
+    color: white;
+    text-align: center;
+}
+
+.loginbox a {
+    text-decoration: none;
+    line-height: normal;
+    font-size: 16px;
+    color: #2f2e33;
+    padding-top: 40px;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+.loginbox a:hover {
+    color: #0741b5;
+    animation: popout 1s ease;
+    -webkit-animation: popout 1s ease;
+}
+
+.popout {
+    animation: popout 1s ease;
+    -webkit-animation: popout 1s ease;
+}
+
+@keyframes popout {
+    from {
+        transform: scale(0)
+    }
+    80% {
+        transform: scale(1.2)
+    }
+    to {
+        transform: scale(1)
+    }
+}
+
+@-webkit-keyframes popout {
+    from {
+        -webkit-transform: scale(0)
+    }
+    80% {
+        -webkit-transform: scale(1.2)
+    }
+    to {
+        -webkit-transform: scale(1)
+    }
+}
+
+form {
+    font-size: 20px !important;
+}

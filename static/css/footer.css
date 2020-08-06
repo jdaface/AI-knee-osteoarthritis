@@ -1,0 +1,10 @@
+ /* Footer*/
+ 
+ footer {
+     background: rgba(2, 19, 66, 0.9);
+     overflow-x: hidden;
+     width: 40px;
+     border-top: solid;
+     padding-top: 10px;
+     text-align: center;
+ }
